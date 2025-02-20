@@ -1,5 +1,5 @@
 Test Case for Snackbars not showing consistently in an app
-- min SDK 35, max 35, compiled for 35
+- min SDK 34, max 35, compiled for 35
 - I set the MarginLayoutParams only once in both the Activity and Fragment
 
 - in API34 with EdgeToEdge ()
