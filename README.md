@@ -5,13 +5,14 @@ Test Case for Snackbars not showing consistently in an app
 in API34 with EdgeToEdge
 - main activity:
 1. tap the "show snackbar" button and it shows correctly the first time
-2. tap the "show snackbar" button again and the snackbar moves to the edge ignoring the margins
-3. when the IME kbd is invoked by tapping on the text edit, the snackbar doesn't "climb" on top of it
-4. when the IME kbd is hidden, the snackbar is now positioned correctly
+2. tap the "show snackbar" button again and the snackbar moves to the bottom edge ignoring the margins
+3. when the snackbar is shown and the IME kbd is invoked by tapping on the text edit, the snackbar "climbs" on top of it
+4. if the IME kbd is hidden, the snackbar goes down correctly, above the system bar
+5. if the IME kbd is visible, tap on the "show snackbar" sends the snackbar behind the keyboard (not visible)
 - fragment:
-5. tap the "show snackbar" button and it shows correctly every time
-6. when the IME kbd is invoked by tapping on the text edit, the snackbar "climbs" on top of it
-7. when the IME kbd is hidden, the snackbar follows it correctly
+6. tap the "show snackbar" button and it shows correctly every time
+7. when the IME kbd is visible (by tapping on the text edit), the snackbar shows on top of it
+8. when the IME kbd is hidden, the snackbar shows correctly above the system bar
 
 in API35 with EdgeToEdge
 - main activity is pretty much the same as in API34:
